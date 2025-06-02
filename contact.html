@@ -250,18 +250,23 @@
             </div>
           </div>
           <div class="col-lg-6" style="flex: 1 1 320px; min-width: 300px; max-width: 100%; margin-bottom: 32px;">
-            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(191,160,70,0.07); padding: 32px 24px;">
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"><!-- TODO: Replace with your W3Forms ACCESS KEY -->
-              <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required style="flex: 1 1 45%; min-width: 120px; border-radius: 6px; margin-bottom: 0;">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required style="flex: 1 1 45%; min-width: 120px; border-radius: 6px; margin-bottom: 0;">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required style="flex: 1 1 100%; border-radius: 6px; margin-top: 8px;">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required style="flex: 1 1 100%; border-radius: 6px; margin-top: 8px;"></textarea>
-                <div style="flex: 1 1 100%; text-align: center; margin-top: 12px;">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                  <button type="submit" style="background: #bfa046; color: #111; font-weight: 700; border-radius: 24px; padding: 10px 36px; letter-spacing: 1.1px; text-transform: uppercase; font-family: 'Poppins', sans-serif; border: none;">Send Message</button>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="post" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(191,160,70,0.07); padding: 32px 24px; border: 2px solid #bfa046;">
+              <input type="hidden" name="access_key" value="d97298f5-2c17-488d-bfd0-4928a6d78fd7">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn" style="background: #bfa046; color: #111; font-weight: 700; border-radius: 24px; padding: 10px 36px; letter-spacing: 1.1px; text-transform: uppercase; font-family: 'Poppins', sans-serif; border: none;">Send Message</button>
                 </div>
               </div>
             </form>
